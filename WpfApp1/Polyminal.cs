@@ -9,7 +9,7 @@ namespace WpfApp1
 {
     internal class Polyminal
     {
-
+        int a = 29;
         private double _a, _b, _c, _d;
 
         // Констурктор для введення із клави
