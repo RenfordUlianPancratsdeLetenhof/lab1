@@ -10,55 +10,57 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="A" HorizontalAlignment="Left" Margin="50,115,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="B" HorizontalAlignment="Left" Margin="167,115,0,0" VerticalAlignment="Top" Width="19" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="C" HorizontalAlignment="Left" Margin="50,149,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="D" HorizontalAlignment="Left" Margin="167,149,0,0" VerticalAlignment="Top" Width="21" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="X" HorizontalAlignment="Left" Margin="49,184,0,0" VerticalAlignment="Top" Width="22" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="Обчислення многочлена за аргументом Х - " HorizontalAlignment="Left" Margin="47,220,0,0" VerticalAlignment="Top" Width="277" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="ans_polyminal_with_x" Content="Відповідь буде тут" HorizontalAlignment="Left" Margin="51,252,0,0" VerticalAlignment="Top" Width="138" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF13234B"/>
-        <TextBox x:Name="a_textbox_1" HorizontalAlignment="Left" Margin="80,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
-        <TextBox x:Name="b_textbox_1" HorizontalAlignment="Left" Margin="197,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
-        <TextBox x:Name="c_textbox_1" HorizontalAlignment="Left" Margin="80,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
-        <TextBox x:Name="d_textbox_1" HorizontalAlignment="Left" Margin="197,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
-        <TextBox x:Name="x_textbox_" HorizontalAlignment="Left" Margin="81,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Panel.ZIndex="5"/>
-        <Button x:Name="ans_polyminal_with_x_button" Content="Обрахувати" HorizontalAlignment="Left" Margin="172,187,0,0" VerticalAlignment="Top" Width="84" Click="ans_polyminal_with_x_button_Click" Background="#FF223975" Foreground="White" BorderBrush="#FF13234B" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label Content="Вираз має вигляд - " HorizontalAlignment="Left" Margin="46,292,0,0" VerticalAlignment="Top" Width="138" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="polyminal_look_for_x" Content="Вираз буде тут" HorizontalAlignment="Left" Height="32" Margin="171,292,0,0" VerticalAlignment="Top" Width="108" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF13234B"/>
-        <Label Content="Обчислення значення многочлена &#xA;для заданого аргументу Х" HorizontalAlignment="Left" Height="95" Margin="48,34,0,0" VerticalAlignment="Top" Width="425" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
-        <Rectangle HorizontalAlignment="Left" Height="330" Margin="40,24,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="433" StrokeThickness="3" RadiusX="2" RadiusY="2" />
-        <Label Content="Операція додавання, з отриманням&#xA;нового многочлена, через діапазон" HorizontalAlignment="Left" Height="95" Margin="545,34,0,0" VerticalAlignment="Top" Width="447" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
-        <Label x:Name="dapazon_min1" Content="Мінімальний діапазон" HorizontalAlignment="Left" Margin="545,115,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy13" Content="Максимальний діапазон" HorizontalAlignment="Left" Margin="545,149,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <TextBox x:Name="min_diapzon" HorizontalAlignment="Left" Margin="726,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Panel.ZIndex="5" />
-        <TextBox x:Name="max_diapzon" HorizontalAlignment="Left" Margin="726,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy14" Content="Ваш перший многочлен -" HorizontalAlignment="Left" Margin="545,184,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy15" Content="Ваш дургий многочлен -" HorizontalAlignment="Left" Margin="545,215,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy16" Content="Ваш вихідний многочлен -" HorizontalAlignment="Left" Margin="545,247,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="first_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,184,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
-        <Label x:Name="second_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,215,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
-        <Label x:Name="answer_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,246,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
-        <Button x:Name="answer_random_diapaz" Content="Обрахувати" HorizontalAlignment="Left" Margin="552,315,0,0" VerticalAlignment="Top" Width="168" BorderThickness="0,1,1,1" Click="answer_random_diapaz_Click" Panel.ZIndex="5" Background="#FF223975" BorderBrush="#FF13234B" Foreground="White" FontWeight="Bold"/>
-        <Label x:Name="dapazon_min_Copy17" Content="X (не обов'язково)" HorizontalAlignment="Left" Margin="872,115,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <TextBox x:Name="texbox_for_x_diapaz" HorizontalAlignment="Left" Margin="1008,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy18" Content="Якщо ви ввели Х, то буде обраховано за аргументом Х" HorizontalAlignment="Left" Margin="545,279,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="answer_for_x_diapaz" Content="Тут буде відповідь" HorizontalAlignment="Left" Margin="894,279,0,0" VerticalAlignment="Top" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF223975"/>
-        <Rectangle HorizontalAlignment="Left" Height="331" Margin="535,23,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="600" StrokeThickness="3" RadiusX="2" RadiusY="2" />
-        <Label Content="Операція віднімання, з отриманням&#xA;нового многочлена, через діапазон сталий (0 &gt; 100)&#xA;" HorizontalAlignment="Left" Height="95" Margin="50,418,0,0" VerticalAlignment="Top" Width="638" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
-        <Label x:Name="dapazon_min_Copy19" Content="Мінімальний діапазон = 0" HorizontalAlignment="Left" Margin="50,509,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy20" Content="Максимальний діапазон = 100" HorizontalAlignment="Left" Margin="252,509,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy21" Content="Ваш перший многочлен -" HorizontalAlignment="Left" Margin="50,543,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy22" Content="Ваш дургий многочлен -" HorizontalAlignment="Left" Margin="50,574,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy23" Content="Ваш вихідний многочлен -" HorizontalAlignment="Left" Margin="50,606,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy24" Content="Якщо ви ввели Х, то буде обраховано за аргументом Х" HorizontalAlignment="Left" Margin="50,638,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <Label x:Name="answer_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
-        <Label x:Name="second_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,574,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
-        <Label x:Name="first_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,544,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
-        <Label x:Name="ans_with_x_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="389,638,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" BorderThickness="2,2,2,2" BorderBrush="#FF13234B" Panel.ZIndex="5"/>
-        <Button x:Name="fix_diapaz_calculate" Content="Обрахувати" HorizontalAlignment="Left" Margin="56,678,0,0" VerticalAlignment="Top" Width="105" Background="#FF223975" BorderBrush="#FF13234B" Foreground="White" FontWeight="Bold" Click="fix_diapaz_calculate_Click" Panel.ZIndex="5"/>
-        <Label x:Name="dapazon_min_Copy25" Content="X (не обов'язково)" HorizontalAlignment="Left" Margin="485,509,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
-        <TextBox x:Name="third_x" HorizontalAlignment="Left" Margin="625,513,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" Panel.ZIndex="5"/>
-        <Rectangle HorizontalAlignment="Left" Height="313" Margin="40,406,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="665" StrokeThickness="3" RadiusX="2" RadiusY="2" />
-
+        <Label Content="A" HorizontalAlignment="Left" Margin="50,151,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="167,151,0,0" VerticalAlignment="Top" Width="19" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="167,185,0,0" VerticalAlignment="Top" Width="21" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="49,220,0,0" VerticalAlignment="Top" Width="22" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="Обчислення многочлена за аргументом Х - " HorizontalAlignment="Left" Margin="47,256,0,0" VerticalAlignment="Top" Width="277" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="ans_polyminal_with_x" Content="Відповідь буде тут" HorizontalAlignment="Left" Margin="51,288,0,0" VerticalAlignment="Top" Width="138" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF13234B"/>
+        <TextBox x:Name="a_textbox_1" HorizontalAlignment="Left" Margin="80,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
+        <TextBox x:Name="b_textbox_1" HorizontalAlignment="Left" Margin="197,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
+        <TextBox x:Name="c_textbox_1" HorizontalAlignment="Left" Margin="80,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
+        <TextBox x:Name="d_textbox_1" HorizontalAlignment="Left" Margin="197,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Panel.ZIndex="5"/>
+        <TextBox x:Name="x_textbox_" HorizontalAlignment="Left" Margin="81,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Panel.ZIndex="5"/>
+        <Button x:Name="ans_polyminal_with_x_button" Content="Обрахувати" HorizontalAlignment="Left" Margin="172,223,0,0" VerticalAlignment="Top" Width="84" Click="ans_polyminal_with_x_button_Click" Background="#FF223975" Foreground="White" BorderBrush="#FF13234B" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label Content="Вираз має вигляд - " HorizontalAlignment="Left" Margin="46,328,0,0" VerticalAlignment="Top" Width="138" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="polyminal_look_for_x" Content="Вираз буде тут" HorizontalAlignment="Left" Height="32" Margin="171,328,0,0" VerticalAlignment="Top" Width="165" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF13234B"/>
+        <Label Content="Обчислення значення многочлена &#xA;для заданого аргументу Х" HorizontalAlignment="Left" Height="95" Margin="48,70,0,0" VerticalAlignment="Top" Width="425" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
+        <Rectangle HorizontalAlignment="Left" Height="330" Margin="40,60,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="433" StrokeThickness="3" RadiusX="2" RadiusY="2" />
+        <Label Content="Операція додавання, з отриманням&#xA;нового многочлена, через діапазон" HorizontalAlignment="Left" Height="95" Margin="545,70,0,0" VerticalAlignment="Top" Width="447" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
+        <Label x:Name="dapazon_min1" Content="Мінімальний діапазон" HorizontalAlignment="Left" Margin="545,151,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy13" Content="Максимальний діапазон" HorizontalAlignment="Left" Margin="545,185,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <TextBox x:Name="min_diapzon" HorizontalAlignment="Left" Margin="726,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Panel.ZIndex="5" />
+        <TextBox x:Name="max_diapzon" HorizontalAlignment="Left" Margin="726,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy14" Content="Ваш перший многочлен -" HorizontalAlignment="Left" Margin="545,220,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy15" Content="Ваш дургий многочлен -" HorizontalAlignment="Left" Margin="545,251,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy16" Content="Ваш вихідний многочлен -" HorizontalAlignment="Left" Margin="545,283,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="first_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,220,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
+        <Label x:Name="second_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,251,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
+        <Label x:Name="answer_polyminal_label" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="726,282,0,0" VerticalAlignment="Top" Panel.ZIndex="5"/>
+        <Button x:Name="answer_random_diapaz" Content="Обрахувати" HorizontalAlignment="Left" Margin="552,351,0,0" VerticalAlignment="Top" Width="168" BorderThickness="0,1,1,1" Click="answer_random_diapaz_Click" Panel.ZIndex="5" Background="#FF223975" BorderBrush="#FF13234B" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="dapazon_min_Copy17" Content="X (не обов'язково)" HorizontalAlignment="Left" Margin="872,151,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <TextBox x:Name="texbox_for_x_diapaz" HorizontalAlignment="Left" Margin="1008,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy18" Content="Якщо ви ввели Х, то буде обраховано за аргументом Х" HorizontalAlignment="Left" Margin="545,315,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="answer_for_x_diapaz" Content="Тут буде відповідь" HorizontalAlignment="Left" Margin="894,315,0,0" VerticalAlignment="Top" Panel.ZIndex="5" BorderThickness="2,2,2,2" BorderBrush="#FF223975"/>
+        <Rectangle HorizontalAlignment="Left" Height="331" Margin="535,59,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="600" StrokeThickness="3" RadiusX="2" RadiusY="2" />
+        <Label Content="Операція віднімання, з отриманням&#xA;нового многочлена, через діапазон сталий (0 &gt; 100)&#xA;" HorizontalAlignment="Left" Height="95" Margin="50,454,0,0" VerticalAlignment="Top" Width="638" FontSize="24" FontWeight="Bold" Panel.ZIndex="5" BorderBrush="#FF13234B"/>
+        <Label x:Name="dapazon_min_Copy19" Content="Мінімальний діапазон = 0" HorizontalAlignment="Left" Margin="50,545,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy20" Content="Максимальний діапазон = 100" HorizontalAlignment="Left" Margin="252,545,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy21" Content="Ваш перший многочлен -" HorizontalAlignment="Left" Margin="50,579,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy22" Content="Ваш дургий многочлен -" HorizontalAlignment="Left" Margin="50,610,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy23" Content="Ваш вихідний многочлен -" HorizontalAlignment="Left" Margin="50,642,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy24" Content="Якщо ви ввели Х, то буде обраховано за аргументом Х" HorizontalAlignment="Left" Margin="50,674,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <Label x:Name="answer_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,643,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
+        <Label x:Name="second_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,610,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
+        <Label x:Name="first_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="252,580,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" Panel.ZIndex="5"/>
+        <Label x:Name="ans_with_x_polyminal_fix_diapz" Content="Тут буде многочлен" HorizontalAlignment="Left" Margin="389,674,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.26,-0.157" BorderThickness="2,2,2,2" BorderBrush="#FF13234B" Panel.ZIndex="5"/>
+        <Button x:Name="fix_diapaz_calculate" Content="Обрахувати" HorizontalAlignment="Left" Margin="56,714,0,0" VerticalAlignment="Top" Width="105" Background="#FF223975" BorderBrush="#FF13234B" Foreground="White" FontWeight="Bold" Click="fix_diapaz_calculate_Click" Panel.ZIndex="5"/>
+        <Label x:Name="dapazon_min_Copy25" Content="X (не обов'язково)" HorizontalAlignment="Left" Margin="485,545,0,0" VerticalAlignment="Top" FontWeight="Bold" Panel.ZIndex="5"/>
+        <TextBox x:Name="third_x" HorizontalAlignment="Left" Margin="625,549,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="52" Panel.ZIndex="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="313" Margin="40,442,0,0"  Stroke="#FF223975" VerticalAlignment="Top" Width="665" StrokeThickness="3" RadiusX="2" RadiusY="2" />
+        <Menu IsMainMenu="True" x:Name="menu">
+            <MenuItem Header="Спадкування" Click="MenuItem_Click"></MenuItem>
+        </Menu>
     </Grid>
 </Window>

@@ -76,8 +76,8 @@ namespace WpfApp1
                 if (x != 0)
                 {
                     answer_for_x_diapaz.Content = answer_polyminal.evaluate(x);
-                } 
-        
+                }
+
             }
             catch
             {
@@ -94,21 +94,21 @@ namespace WpfApp1
             try
             {
                 first_polyminal = new Polyminal();
-                second_polyminal = new Polyminal(); 
+                second_polyminal = new Polyminal();
                 x = Convert.ToDouble(third_x.Text);
                 answer_polyminal = first_polyminal.substract(second_polyminal);
-               
+
 
 
                 first_polyminal_fix_diapz.Content = first_polyminal.output_polyminal();
                 second_polyminal_fix_diapz.Content = second_polyminal.output_polyminal();
                 answer_polyminal_fix_diapz.Content = answer_polyminal.output_polyminal();
-                
+
                 if (x != 0)
                 {
                     ans_with_x_polyminal_fix_diapz.Content = answer_polyminal.evaluate(x);
                 }
-                
+
             }
 
             catch
@@ -116,6 +116,13 @@ namespace WpfApp1
                 MessageBox.Show("Помилка");
                 return;
             }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Lab2 window = new Lab2();
+            window.Show();
+            this.Hide();
         }
     }
 }
