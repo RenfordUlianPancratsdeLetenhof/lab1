@@ -120,9 +120,20 @@ namespace WpfApp1
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Lab2 window = new Lab2();
-            window.Show();
-            this.Hide();
+            MenuItem menuItem = (MenuItem)sender;
+
+            if (menuItem.Header.ToString() == "Спадкування")
+            {
+                Lab2 window = new Lab2();
+                window.Show();
+                this.Hide();
+            }
+            else if (menuItem.Header.ToString() == "Абстракція")
+            {
+                Lab3 window = new Lab3();
+                window.Show();
+                this.Hide();
+            }
         }
     }
 }
