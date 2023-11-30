@@ -62,6 +62,7 @@
         <Menu IsMainMenu="True" x:Name="menu">
             <MenuItem Header="Спадкування" Click="MenuItem_Click"></MenuItem>
             <MenuItem Header="Абстракція" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Header="Компонент" Click="MenuItem_Click"></MenuItem>
         </Menu>
     </Grid>
 </Window>

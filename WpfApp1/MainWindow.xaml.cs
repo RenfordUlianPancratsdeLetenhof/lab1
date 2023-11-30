@@ -134,6 +134,12 @@ namespace WpfApp1
                 window.Show();
                 this.Hide();
             }
+            else if (menuItem.Header.ToString() == "Компонент")
+            {
+                Laba5 window = new Laba5();
+                window.Show();
+                this.Hide();    
+            }
         }
     }
 }

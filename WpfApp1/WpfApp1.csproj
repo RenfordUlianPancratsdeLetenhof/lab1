@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Chx\Chx.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Inheritance\img\Group 40 (1).png" />
     <Resource Include="Inheritance\img\vecteezy_happy-cat-sticker-cartoon-style-design_22128800_91.png" />
   </ItemGroup>
